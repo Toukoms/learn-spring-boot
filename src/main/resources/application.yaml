@@ -4,6 +4,10 @@ spring:
   jpa:
     hibernate:
       ddl-auto: none
+  datasource:
+    url: jdbc:postgresql://localhost:5432/job
+    username: postgres
+    password: postgres
 ---
 spring:
   config:

@@ -16,7 +16,8 @@ public class TrainingApplication {
 	@Bean
 	public CommandLineRunner run(RoomRepository roomRepository) {
 		return args -> {
-			roomRepository.findAll().forEach(System.out::println );
+			System.out.println(roomRepository.findAll().isEmpty() ? "No Room in database" : "");
+			roomRepository.findAll().forEach(System.out::println);
 		};
 	}
 
