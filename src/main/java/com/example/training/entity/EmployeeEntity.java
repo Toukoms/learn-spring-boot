@@ -21,6 +21,4 @@ public class EmployeeEntity {
     private String lastName;
     @Column(name = "POSITION")
     private String position;
-
-
 }
