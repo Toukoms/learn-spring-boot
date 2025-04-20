@@ -10,7 +10,7 @@ import java.util.UUID;
 @Table(name = "EMPLOYEES")
 @Data
 @ToString
-public class EmplyeeEntity {
+public class EmployeeEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     @Column(name = "EMPLOYEE_ID")
