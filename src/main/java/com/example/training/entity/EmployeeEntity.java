@@ -20,5 +20,6 @@ public class EmployeeEntity {
     @Column(name = "LAST_NAME")
     private String lastName;
     @Column(name = "POSITION")
-    private String position;
+    @Enumerated(EnumType.STRING)
+    private Position position;
 }
