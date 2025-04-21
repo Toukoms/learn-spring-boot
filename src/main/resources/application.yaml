@@ -8,6 +8,9 @@ spring:
     url: jdbc:postgresql://localhost:5432/job
     username: postgres
     password: postgres
+  data:
+    rest:
+      base-path: api/rest
 ---
 spring:
   config:
