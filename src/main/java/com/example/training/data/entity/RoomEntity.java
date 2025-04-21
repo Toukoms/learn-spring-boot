@@ -2,14 +2,12 @@ package com.example.training.data.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
-import lombok.ToString;
 
 import java.util.UUID;
 
 @Entity
 @Table(name="ROOMS")
 @Data
-@ToString
 public class RoomEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
