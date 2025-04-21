@@ -1,13 +1,17 @@
 package com.example.training.data.entity;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.UUID;
 
 @Entity
 @Table(name = "EMPLOYEES")
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class EmployeeEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
