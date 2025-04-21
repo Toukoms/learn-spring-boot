@@ -1,4 +1,4 @@
-package com.example.training.web.model;
+package com.example.training.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,9 +9,9 @@ import java.util.UUID;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Room {
+public class Employee {
     private UUID id;
-    private String name;
-    private String number;
-    private String info;
+    private String firstName;
+    private String lastName;
+    private String position;
 }

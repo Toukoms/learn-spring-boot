@@ -2,7 +2,7 @@ package com.example.training.web.controller;
 
 import com.example.training.data.entity.RoomEntity;
 import com.example.training.data.repository.RoomRepository;
-import com.example.training.web.model.Room;
+import com.example.training.model.Room;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
