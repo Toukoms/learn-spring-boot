@@ -1,6 +1,6 @@
 package com.example.training;
 
-import com.example.training.repository.RoomRepository;
+import com.example.training.data.repository.RoomRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

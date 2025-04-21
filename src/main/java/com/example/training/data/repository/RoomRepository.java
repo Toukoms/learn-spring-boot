@@ -1,7 +1,7 @@
-package com.example.training.repository;
+package com.example.training.data.repository;
 
-import com.example.training.entity.EmployeeEntity;
-import com.example.training.entity.RoomEntity;
+import com.example.training.data.entity.EmployeeEntity;
+import com.example.training.data.entity.RoomEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.UUID;
