@@ -5,19 +5,25 @@
     <title>Rooms</title>
 </head>
 <body>
+<header>
+    <a href="#" th:href="@{/}">Home</a>
+    <form method="post" th:action="@{/logout}">
+        <input type="submit" value="Sign Out">
+    </form>
+</header>
 <table>
     <caption>Rooms</caption>
     <thead>
-        <th>Number</th>
-        <th>Name</th>
-        <th>Bed Info</th>
+    <th>Number</th>
+    <th>Name</th>
+    <th>Bed Info</th>
     </thead>
     <tbody>
-        <tr th:each="room:${rooms}">
-            <td th:text="${room.number}">Number</td>
-            <td th:text="${room.name}">Name</td>
-            <td th:text="${room.info}">Bed Info</td>
-        </tr>
+    <tr th:each="room:${rooms}">
+        <td th:text="${room.number}">Number</td>
+        <td th:text="${room.name}">Name</td>
+        <td th:text="${room.info}">Bed Info</td>
+    </tr>
     </tbody>
 </table>
 </body>
