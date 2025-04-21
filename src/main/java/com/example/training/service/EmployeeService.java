@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 @Service
@@ -26,7 +27,8 @@ public class EmployeeService {
     }
 
     public Employee getEmployeeById(UUID id) {
-        return this.getEmployeeFromEmployeeEntity(this.employeeRepository.getReferenceById(id));
+        Optional<EmployeeEntity> employeeEntity = this.employeeRepository.findById(id);
+        return employeeEntity.map(this::getEmployeeFromEmployeeEntity).orElse(null);
     }
 
     public Employee addEmployee(Employee employee) {
